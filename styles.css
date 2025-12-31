@@ -673,7 +673,7 @@ section::after {
     border: 1px solid rgba(59, 130, 246, 0.3);
     border-radius: var(--radius-xl);
     padding: var(--spacing-lg);
-    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
+    box-shadow: none;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -1204,8 +1204,8 @@ section::after {
     }
     
     .ba-image {
-        width: 100px;
-        height: 100px;
+        width: 68px;
+        height: 68px;
     }
     
     .arrow-divider {
@@ -1229,6 +1229,14 @@ section::after {
     
     .carousel-container {
         max-width: 95%;
+    }
+    
+    .carousel-prev {
+        left: -25px;
+    }
+    
+    .carousel-next {
+        right: -25px;
     }
     
     .section-title {
