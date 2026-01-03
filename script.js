@@ -120,7 +120,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
-            const offsetTop = targetElement.offsetTop - 80; // Account for fixed navbar
+            let offsetTop = targetElement.offsetTop - 80; // Account for fixed navbar
+            
+            // Add extra offset for pricing section to show full card with purchase button
+            if (targetId === '#pricing') {
+                offsetTop += 150; // Scroll further down to show the full pricing card
+            }
+            
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
