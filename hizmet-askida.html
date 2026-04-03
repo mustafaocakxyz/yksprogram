@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-1 Görüşme Geçici Olarak Askıda - YKS 2026 Program</title>
+    <link rel="icon" type="image/png" href="images/arrows.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .policy-page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: var(--spacing-xl) var(--spacing-lg);
+            box-sizing: border-box;
+        }
+        .policy-container {
+            max-width: 640px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .policy-content {
+            background: rgba(26, 26, 46, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-2xl);
+            line-height: 1.85;
+            text-align: center;
+        }
+        .policy-content h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-xl);
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.35;
+            text-align: center;
+        }
+        .policy-content p {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-lg);
+        }
+        .policy-content p:last-of-type {
+            margin-bottom: var(--spacing-xl);
+        }
+        .policy-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+            justify-content: center;
+        }
+        .policy-actions .btn-primary {
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .policy-content {
+                padding: var(--spacing-lg);
+            }
+            .policy-content h1 {
+                font-size: 1.45rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="policy-page">
+        <div class="policy-container">
+            <div class="policy-content">
+                <h1>Hizmet geçici olarak askıda</h1>
+                <p>İlginiz için teşekkür ederiz ancak yoğunluk sebebiyle 1 - 1 görüşme hizmetimiz geçici olarak askıya alınmıştır.</p>
+                <p>İlerleyen günlerde tekrar aktifleştirilme ihtimaline karşın siteyi kontrol etmenizi tavsiye ederiz.</p>
+                <p>YKS sürecinizde başarılar diliyoruz!</p>
+                <div class="policy-actions">
+                    <a href="index.html#home" class="btn-primary">Ana Sayfa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
